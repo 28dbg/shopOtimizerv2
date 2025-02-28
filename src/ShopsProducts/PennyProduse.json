@@ -16,71 +16,31 @@
         {
           "productName": "Caise",
           "productImageId": "67b39bd00105e8a01bd424fd",
-          "productComparisonCode": 10,
+          "productComparisonCode": 2549,
           "productId": "67b39bd034e245208826a698",
           "productPrice": 19.27,
           "productDescription": "Per kilogram, calitatea I"
         },
         {
-          "productName": "Afine",
+          "productName": "PENNY Amestec de fructe cu coaja lemnoasa ",
           "productImageId": "67b39bd0bda35a511d197c25",
-          "productComparisonCode": 9,
+          "productComparisonCode": 32109 ,
           "productId": "67b39bd088c4c428c2c2d871",
           "productPrice": 98.76,
-          "productDescription": "Afine 125 g per caserola.Produsul poate fi de origine UE sau Non UE"
+          "productDescription": "PENNY Amestec de fructe cu coaja lemnoasa 200 g"
         },
         {
-          "productName": "Avocado",
+          "productName": "Sfecla rosie vrac ",
           "productImageId": "67b39bd0a43a3e9eea1e4458",
-          "productComparisonCode": 5,
+          "productComparisonCode": 75774 ,
           "productId": "67b39bd01da9bdbccdef1024",
           "productPrice": 47.49,
-          "productDescription": "Avocado per bucata, calitatea I, calibru 18. Produsul poate fi de origine UE sau Non UE"
-        },
-        {
-          "productName": "Mere",
-          "productImageId": "67b39bd0ca26f2d27f6479ae",
-          "productComparisonCode": 9,
-          "productId": "67b39bd00782c8ff9e7bc6e9",
-          "productPrice": 71.55,
-          "productDescription": "Mere Red Delicious Romania vrac per kg. Tara de origine: Romania"
-        },
-        {
-          "productName": "Morcovi",
-          "productImageId": "67b39bd0405716407efb4626",
-          "productComparisonCode": 4,
-          "productId": "67b39bd0a2b06d00e059226a",
-          "productPrice": 99.45,
-          "productDescription": "Morcovi vrac Romania. Tara de origine: Romania"
-        },
-        {
-          "productName": "Banana",
-          "productImageId": "67b39bd0ac1a5af3cc55930c",
-          "productComparisonCode": 4,
-          "productId": "67b39bd09cbec9f847152b5d",
-          "productPrice": 29.63,
-          "productDescription": "Banane vrac per bucata. Produsul poate fi de origine UE sau Non UE"
-        },
-        {
-          "productName": "Rucola",
-          "productImageId": "67b39bd04e40b8c7fa49c149",
-          "productComparisonCode": 3,
-          "productId": "int(1,200)",
-          "productPrice": 63.87,
-          "productDescription": "Salatele care contin Rucola ca si ingredient isi pastreaza aspectul proaspat un timp mai indelungat. Calitatea I. Tara de origine: Romania"
-        },
-        {
-          "productName": "Ardei gras",
-          "productImageId": "67b39bd08eec8c2bd7c7925a",
-          "productComparisonCode": 4,
-          "productId": "67b39bd04c133517712bdb6d",
-          "productPrice": 56.01,
-          "productDescription": "Ardei gras, calitatea I. Tara de origine: Olanda"
+          "productDescription": "Sfecla rosie vrac / kg"
         },
         {
           "productName": "Fenicul",
           "productImageId": "67b39bd07cdbe2a1fc5f7ca4",
-          "productComparisonCode": 2,
+          "productComparisonCode": 1977,
           "productId": "67b39bd05320bc69003e0186",
           "productPrice": 50.38,
           "productDescription": "Feniculul este originar din zona Mediteranei și se poate utiliza ca legumă sau condiment."
@@ -103,74 +63,34 @@
         {
           "productName": "Iaurt Covalact",
           "productImageId": "67b39bd0e0b8fd1ed0ede8e6",
-          "productComparisonCode": 9,
+          "productComparisonCode": 7303 ,
           "productId": "67b39bd0e534cf81fdd1c73a",
           "productPrice": 15.78,
           "productDescription": "Lapte de consum integral 3.5% grasime 1l Zuzu. Ingrediente: Lapte de vaca integral, standardizat, omogenizat si pasteurizat. Ingrediente: Nu necesita fierbere"
         },
         {
-          "productName": "Iaurt mic Laptaria cu caimac",
-          "productImageId": "67b39bd01bcc430ebb8ee8de",
-          "productComparisonCode": 3,
-          "productId": "67b39bd0865f78bd6880ae67",
-          "productPrice": 55.49,
-          "productDescription": "Iaurt mic Laptaria cu caimac, 2.7%, 190 g "
-        },
-        {
-          "productName": "Iaurt Laptaria cu caimac",
-          "productImageId": "67b39bd02d4d28dfda4b491a",
-          "productComparisonCode": 7,
-          "productId": "67b39bd0c21747473048babb",
-          "productPrice": 52.68,
-          "productDescription": "Iaurt Laptaria cu caimac, 4.5% grasime, 400"
-        },
-        {
-          "productName": "Lapte batut Covalact 2% grasime",
-          "productImageId": "67b39bd0279868ca6120d8d0",
-          "productComparisonCode": 0,
-          "productId": "67b39bd0b7d044085040a868",
-          "productPrice": 94.14,
-          "productDescription": "Lapte batut Covalact 2% grasime 900 g"
-        },
-        {
-          "productName": "Lapte batut Romfulda",
-          "productImageId": "67b39bd0dac52de7b08ea993",
-          "productComparisonCode": 9,
-          "productId": "67b39bd038db624d40378c30",
-          "productPrice": 57.95,
-          "productDescription": "Lapte batut Romfulda, 900 g"
-        },
-        {
-          "productName": "Lapte covasit Covalact 3.3% grasime",
-          "productImageId": "67b39bd0275dca27c581db0d",
-          "productComparisonCode": 0,
-          "productId": "67b39bd06afa62b2e2d42d1e",
-          "productPrice": 28.84,
-          "productDescription": "Lapte covasit Covalact 3.3% grasime, 900 g"
-        },
-        {
-          "productName": "Iaurt cremos cu alune de padure Muller",
+          "productName": "Oua 20 S",
           "productImageId": "67b39bd0661abaa05a1b15d9",
-          "productComparisonCode": 10,
+          "productComparisonCode": 54626 ,
           "productId": "67b39bd0891d9c81010e0aab",
           "productPrice": 75.15,
-          "productDescription": "Iaurt cremos cu alune de padure Muller, 500 g"
+          "productDescription": "Oua 20 S"
         },
         {
           "productName": "Iaurt cu capsuni BIO Napolact",
           "productImageId": "67b39bd06743841145ba9dff",
-          "productComparisonCode": 4,
+          "productComparisonCode": 3418 ,
           "productId": "67b39bd06792a6c1bc16ba4d",
           "productPrice": 84.65,
           "productDescription": "Iaurt cu capsuni BIO Napolact, 130 g"
         },
         {
-          "productName": "Iaurt cremos cu straciatella Muller",
+          "productName": "Boni de Tot Branza topita cu smantana ",
           "productImageId": "67b39bd08766c1c1bd8b790d",
-          "productComparisonCode": 1,
+          "productComparisonCode": 95265 ,
           "productId": "67b39bd029e2e939d3994036",
           "productPrice": 17.22,
-          "productDescription": "Iaurt cremos cu straciatella Muller, 500 g"
+          "productDescription": "Boni de Tot Branza topita cu smantana 100 g"
         }
       ]
     },
@@ -180,56 +100,17 @@
       "categoryId": 3,
       "categoryProducts": [
         {
-          "productName": "Aripi de pui Fragedo",
-          "productId": "67b39bd0e25a5dc879de9bff",
-          "productComparisonCode": 2,
-          "productImageId": "67b39bd0a29a7dac3c2a01eb",
-          "productPrice": 76.17,
-          "productDescription": "Aripi de pui Fragedo, caserola +/- 1.2 kg"
-        },
-        {
-          "productName": "Pipote de pui",
-          "productId": "67b39bd0ca54690eaedf1a0a",
-          "productComparisonCode": 9,
-          "productPrice": 98.37,
-          "productDescription": "Pipote de pui Ograda Moldovana, 1 kg"
-        },
-        {
-          "productName": "Aripi de pui crocante Morliny",
-          "productId": "67b39bd06d2173a50f62f252",
-          "productComparisonCode": 2,
-          "productImageId": "67b39bd04f741b557aed3c1d",
-          "productPrice": 87.79,
-          "productDescription": "Aripi de pui crocante Morliny, 350 g"
-        },
-        {
-          "productName": "Carnati de porc",
-          "productImageId": "67b39bd05ea17751b44a5e12",
-          "productComparisonCode": 6,
-          "productId": "67b39bd0e75dff3247d560f8",
-          "productPrice": 91.04,
-          "productDescription": "Carnati de porc, grosi si afumati, +/- 1Kg"
-        },
-        {
-          "productName": "Mate de porc la caserola",
-          "productId": "67b39bd0d8fc4807f31b7e3b",
-          "productComparisonCode": 7,
-          "productImageId": "67b39bd00aecb6e6e6543d77",
-          "productPrice": 71.42,
-          "productDescription": "Mate de porc la caserola, 10 m"
-        },
-        {
           "productName": "Somon file afumat Ocean Fish Kids",
           "productId": "67b39bd0006fd8791ce2db66",
           "productImageId": "67b39bd06f55ca148eabdfc8",
-          "productComparisonCode": 0,
+          "productComparisonCode": 53738 ,
           "productPrice": 98.92,
           "productDescription": "Somon file afumat Ocean Fish Kids, 50 g"
         },
         {
           "productName": "Creveti prefierti 16/20 Ocean Fish",
           "productId": "67b39bd0a613ad8be8e9e2b2",
-          "productComparisonCode": 3,
+          "productComparisonCode": 23704 ,
           "productImageId": "67b39bd063d89dd9c82102af",
           "productPrice": 65.64,
           "productDescription": "Creveti prefierti 16/20 Ocean Fish, 500 g"
@@ -237,7 +118,7 @@
         {
           "productName": "Cocktail fructe de mare fara surimi DaySeady",
           "productId": "67b39bd0a0da58e3215252f0",
-          "productComparisonCode": 5,
+          "productComparisonCode": 4186,
           "productImageId": "67b39bd0f86ca6e069cdb7ad",
           "productPrice": 68.17,
           "productDescription": "Cocktail fructe de mare fara surimi DaySeady"
@@ -253,7 +134,7 @@
         {
           "productName": "Icre de somon",
           "productId": "67b39bd0bf0551d48e34b534",
-          "productComparisonCode": 0,
+          "productComparisonCode": 5977,
           "productImageId": "67b39bd051bded2f0f397aca",
           "productPrice": 87.09,
           "productDescription": "Icre de somon, 50 g"
@@ -266,49 +147,9 @@
       "categoryImageId": "67b39bd0f8907904a3ac9b41",
       "categoryProducts": [
         {
-          "productName": "Chipsuri cu smantana si ceapa Pringles",
-          "productId": "67b39bd04ba7823ffb09d5b6",
-          "productComparisonCode": 6,
-          "productImageId": "67b39bd0c2a95a1157b5c0ac",
-          "productPrice": 14.48,
-          "productDescription": "Chipsuri cu smantana si ceapa Pringles, 40 g"
-        },
-        {
-          "productName": "Chipsuri Pringles cu gust de pizza",
-          "productImageId": "67b39bd0ec1577453b5f3cfe",
-          "productComparisonCode": 2,
-          "productId": "67b39bd07a3ef662e0c6ac3b",
-          "productPrice": 29.69,
-          "productDescription": "Chipsuri Pringles cu gust de pizza, 165 g"
-        },
-        {
-          "productName": "Caserola miez de nuca crud Transilvania Nuts",
-          "productId": "67b39bd079b9e17620e829eb",
-          "productComparisonCode": 9,
-          "productImageId": "67b39bd0706ca0cd31b81af0",
-          "productPrice": 26.22,
-          "productDescription": "Caserola miez de nuca crud Transilvania Nuts, 220 g"
-        },
-        {
-          "productName": "Migdale coapte cu sare de Himalaya Olam",
-          "productId": "67b39bd08c21a848f163ca38",
-          "productComparisonCode": 1,
-          "productImageId": "67b39bd0afebf6ac1b036310",
-          "productPrice": 22.76,
-          "productDescription": "Migdale coapte cu sare de Himalaya Olam, 250 g"
-        },
-        {
-          "productName": "Mix crud de nuca, migdale, nuci caju si alune de padure Nutribon",
-          "productId": "67b39bd07bea8dee4fa359a3",
-          "productComparisonCode": 0,
-          "productImageId": "67b39bd073af3fd94bea0051",
-          "productPrice": 46.21,
-          "productDescription": "Mix crud de nuca, migdale, nuci caju si alune de padure Nutribon, 150 g"
-        },
-        {
           "productName": "Seminte susan Orlandos",
           "productId": "67b39bd0344a5e3bf8527910",
-          "productComparisonCode": 5,
+          "productComparisonCode": 42785 ,
           "productImageId": "67b39bd0d8ab595b767d7a1b",
           "productPrice": 98.37,
           "productDescription": "Seminte susan Orlandos, 250 g"
@@ -317,14 +158,14 @@
           "productName": "Snacks Star mix mov cu gust de de ardei chilli dulce, iaurt, usturoi si paprika",
           "productId": "67b39bd070a514a64f649c1b",
           "productImageId": "67b39bd014883fceb6f07452",
-          "productComparisonCode": 0,
+          "productComparisonCode": 1727 ,
           "productPrice": 58.05,
           "productDescription": "Snacks Star mix mov cu gust de de ardei chilli dulce, iaurt, usturoi si paprika, 90 g"
         },
         {
           "productName": "Pufuleti cu sare Star Saltareti",
           "productId": "67b39bd099fb4e2e95d281ec",
-          "productComparisonCode": 7,
+          "productComparisonCode": 1394 ,
           "productImageId": "67b39bd0d24cc4382b0a3902",
           "productPrice": 86.29,
           "productDescription": "Pufuleti cu sare Star Saltareti, 80g"
@@ -332,7 +173,7 @@
         {
           "productName": "Popcorn cu cascaval Star",
           "productId": "67b39bd03c032931ecbc0052",
-          "productComparisonCode": 6,
+          "productComparisonCode": 6823 ,
           "productImageId": "67b39bd0ae51bc35d9e5b7c2",
           "productPrice": 89.91,
           "productDescription": "Popcorn cu cascaval Star, 80 g"
@@ -341,7 +182,7 @@
           "productName": "Popcorn cu sare Star",
           "productImageId": "67b39bd094674778baede3be",
           "productId": "67b39bd01ee5497d07de9128",
-          "productComparisonCode": 6,
+          "productComparisonCode": 3063 ,
           "productPrice": 11.96,
           "productDescription": "Popcorn cu sare Star, 80 g"
         }
@@ -355,7 +196,7 @@
         {
           "productName": "Ciocolata cu lapte Lindt Lindor",
           "productId": "67b39bd054cd30b355f57142",
-          "productComparisonCode": 5,
+          "productComparisonCode": 3581  ,
           "productImageId": "67b39bd02cacb3b556fb4c7b",
           "productPrice": 55.84,
           "productDescription": "Ciocolata cu lapte Lindt Lindor, 100g"
@@ -363,7 +204,7 @@
         {
           "productName": "Ciocolata cu lapte alpin Ritter Sport",
           "productId": "67b39bd0ef70d205ac4faf19",
-          "productComparisonCode": 6,
+          "productComparisonCode": 6167 ,
           "productImageId": "67b39bd0ae5c9edeca9bb384",
           "productPrice": 91.14,
           "productDescription": "Ciocolata cu lapte alpin Ritter Sport, 100 g"
@@ -371,7 +212,7 @@
         {
           "productName": "Ciocolata cu rom, alune si stafide Ritter sport",
           "productId": "67b39bd043978ef9eff8e7bb",
-          "productComparisonCode": 5,
+          "productComparisonCode": 1964 ,
           "productImageId": "67b39bd0d5a7cf0a3ef6dd0c",
           "productPrice": 22.12,
           "productDescription": "Ciocolata cu rom, alune si stafide Ritter sport, 100 g"
@@ -379,50 +220,10 @@
         {
           "productName": "Ciocolata neagra After Eight, cu menta si aroma de capsuni",
           "productId": "67b39bd0a4ee88480eeedc4d",
-          "productComparisonCode": 5,
+          "productComparisonCode": 6467 ,
           "productImageId": "67b39bd04bcec36c1315cd35",
           "productPrice": 88.19,
           "productDescription": "Ciocolata neagra After Eight, cu menta si aroma de capsuni, 200 g"
-        },
-        {
-          "productName": "Ciocolata cu lapte Rom",
-          "productId": "67b39bd0a1c8374502690341",
-          "productComparisonCode": 2,
-          "productImageId": "67b39bd0b21a3db981e1bcc8",
-          "productPrice": 36.92,
-          "productDescription": "Ciocolata cu lapte Rom, 30 g"
-        },
-        {
-          "productName": "Ciocolata alba Toblerone",
-          "productId": "67b39bd02ec97b8440ea2081",
-          "productComparisonCode": 3,
-          "productImageId": "67b39bd02ef92f6c74412f08",
-          "productPrice": 83.37,
-          "productDescription": "Ciocolata alba Toblerone, 100 g"
-        },
-        {
-          "productName": "Ciocolata amaruie cu alune intregi Ritter",
-          "productId": "67b39bd0b98add31cd3fc42b",
-          "productComparisonCode": 8937 ,
-          "productImageId": "67b39bd04693d0e4ea82c51c",
-          "productPrice": 54.74,
-          "productDescription": "Ciocolata amaruie cu alune intregi Ritter, 100 g"
-        },
-        {
-          "productName": "Ciocolata amaruie cu 60% cacao Sweet & Safe",
-          "productId": "67b39bd0cd03c01d701a766f",
-          "productComparisonCode": 0,
-          "productImageId": "67b39bd0856a16cb035222a9",
-          "productPrice": 73.02,
-          "productDescription": "Ciocolata amaruie cu 60% cacao Sweet & Safe, 25 g"
-        },
-        {
-          "productName": "Ciocolata amaruie Kandia, 70%",
-          "productId": "67b39bd0904341ef4fa4e916",
-          "productComparisonCode": 3,
-          "productImageId": "67b39bd0c0989decd3d59f9d",
-          "productPrice": 69.03,
-          "productDescription": "Ciocolata amaruie Kandia, 70%, 80 g Ciocolata amaruie Kandia, 70%, 80 g"
         },
         {
           "productName": "Ciocolata cu umplutura de mere si capsuni Bob Snail",

@@ -6,6 +6,7 @@
         <button class="select-all-button" @click="selectAllShops()">
           {{ allSelected ? 'Deselect All Shops' : 'Select All Shops' }}
         </button>
+        {{this.$store.state.test}}
       </div>
       <div class="shops-container">
         <div class="shop" v-for="(items, index) in shops.shopsArray" :key="items">
@@ -23,7 +24,7 @@
 <script>
 import shops from '../Shops/shops.json'
 import LayoutMain from '@/components/LayoutMain.vue';
-
+//import { mapGetters } from 'vuex'
 export default {
   components: {
     LayoutMain,
@@ -36,40 +37,46 @@ export default {
       allSelected: false, // sel state
     }
   },
-
+  // computed:{
+  //   ...mapGetters([
+  //     'getTest'
+  //   ])
+  // },
   methods: {
     isSelected(shopId) {  // Check if shop is selected
-      return this.selectedShops.includes(shopId);
+      return this.selectedShops.includes(shopId)
     },
     toggleSelection(shopId) {
-      const index = this.selectedShops.indexOf(shopId);
+      const index = this.selectedShops.indexOf(shopId)
       if (index === -1) {
-        this.selectedShops.push(shopId); // Add shop
+        this.selectedShops.push(shopId) // Add shop
       } else {
-        this.selectedShops.splice(index, 1); // Remove shop
+        this.selectedShops.splice(index, 1) // Remove shop
       }
-      localStorage.setItem('selectedShops', JSON.stringify(this.selectedShops));
+      localStorage.setItem('selectedShops', JSON.stringify(this.selectedShops))
+      this.$emit('update:selectedShops', this.selectedShops)
 
     },
     selectAllShops() {
       if (this.allSelected) {
-        this.selectedShops = [];
+        this.selectedShops = []
       } else {
-        this.selectedShops = this.shops.shopsArray.map(shop => shop.id); // Select all
+        this.selectedShops = this.shops.shopsArray.map(shop => shop.id) // Select all
       }
       this.allSelected = !this.allSelected; // Toggle selection state
-      localStorage.setItem('selectedShops', JSON.stringify(this.selectedShops));
-
+      localStorage.setItem('selectedShops', JSON.stringify(this.selectedShops))
+      this.$emit('update:selectedShops', this.selectedShops)
     },
     checkSelection() {
-      this.allSelected = this.selectedShops.length === this.shops.shopsArray.length;
+      this.allSelected = this.selectedShops.length === this.shops.shopsArray.length
+
     }
   },
   mounted() {
-    const storedShops = JSON.parse(localStorage.getItem('selectedShops')) || [];
-    this.selectedShops = storedShops;
+    const storedShops = JSON.parse(localStorage.getItem('selectedShops')) || []
+    this.selectedShops = storedShops
 
-    this.checkSelection();
+    this.checkSelection()
   }
 }
 </script>

@@ -3,7 +3,7 @@ import './assets/main.css'
 import { createApp } from 'vue';
 import App from './AppView.vue';
 import router from './router';
-
+import store from './Store';
 import { createI18n } from 'vue-i18n';
 import ro from './translations/ro.json';
 import en from './translations/en.json';
@@ -49,6 +49,7 @@ const vuetify = createVuetify({
 
 const app = createApp(App)
 app.use(router)
+app.use(store)
 app.use(i18n)
 app.use(vuetify)
 app.mount('#app')

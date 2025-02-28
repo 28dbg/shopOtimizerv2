@@ -1,19 +1,23 @@
-import js from '@eslint/js'
-import pluginVue from 'eslint-plugin-vue'
-import skipFormatting from '@vue/eslint-config-prettier/skip-formatting'
+import globals from "globals";
+import pluginJs from "@eslint/js";
+import pluginVue from "eslint-plugin-vue";
 
+
+/** @type {import('eslint').Linter.Config[]} */
 export default [
-  {
-    name: 'app/files-to-lint',
-    files: ['**/*.{js,mjs,jsx,vue}'],
-  },
+  {files: ["**/*.{js,mjs,cjs,vue}"]
 
-  {
-    name: 'app/files-to-ignore',
-    ignores: ['**/dist/**', '**/dist-ssr/**', '**/coverage/**'],
   },
-
-  js.configs.recommended,
-  ...pluginVue.configs['flat/essential'],
-  skipFormatting,
-]
+  {languageOptions: {
+     globals: globals.browser,
+     jest: true, // Adaugă Jest ca mediu global
+     describe: true,
+     it: true,
+     expect: true,
+     }},
+  pluginJs.configs.recommended,
+  ...pluginVue.configs["flat/essential"],
+  {
+    files:["**/*./spec.js"]
+  }
+];

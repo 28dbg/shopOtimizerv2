@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
- import APP from '../views/APP.vue'
+import APP from '../views/APP.vue'
 // import CreateList from '../views/CreateList.vue'
 import MagazinView from '../views/ShopsView.vue'
 import CosCumparaturi from '../components/CartView.vue'
@@ -10,7 +10,7 @@ import OferteAfisare from '@/views/OfferView.vue'
 import ContView from '@/views/AccountView.vue'
 import ListeCumparaturi from '@/views/ShoppingList.vue'
 import LayoutMain from '@/components/LayoutMain.vue'
-import CreateList from '@/views/createList.vue'
+import CreateList from '@/views/CreateList.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -21,25 +21,22 @@ const router = createRouter({
     //   component: HomeView,
     // },
     {
-      name:'myhome',
+      name: 'myhome',
       component: APP,
     },
     // {
     //   path: '/about',
     //   name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
+    // route level code-splitting
+    // this generates a separate chunk (About.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
     //   component: () => import('../views/AboutView.vue'),
     // },
-    { path: '/langsSwitch',
-      name: 'langsSwitch',
-      component: LangSwitch,
-    },
+    { path: '/langsSwitch', name: 'langsSwitch', component: LangSwitch },
 
     {
-      path:'/shops',
-      name:'shops',
+      path: '/shops',
+      name: 'shops',
       component: MagazinView,
     },
     {
@@ -66,26 +63,22 @@ const router = createRouter({
       path: '/createlist',
       name: 'createlist',
       component: CreateList,
-
-    },{
-
-        path:'/shoppingcart',
-        name:'shoppingcart',
-        component: CosCumparaturi,
-
-     },
+    },
+    {
+      path: '/shoppingcart',
+      name: 'shoppingcart',
+      component: CosCumparaturi,
+    },
     {
       path: '/shoppinglist',
       name: 'shoppinglist',
       component: ListeCumparaturi,
-    },{
-      path:'/layout',
-      name:'layout',
-      component:LayoutMain
-    }
-
-
-
+    },
+    {
+      path: '/layout',
+      name: 'layout',
+      component: LayoutMain,
+    },
   ],
 })
 

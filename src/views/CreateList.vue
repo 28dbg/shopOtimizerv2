@@ -57,11 +57,18 @@ import ProfiProduse from '../ShopsProducts/ProfiProduse.json'
 import SelgrosProduse from '../ShopsProducts/SelgrosProduse.json'
 import LayoutMain from '@/components/LayoutMain.vue'
 import QuantityButtons from '@/components/QuantityButtons.vue'
-
+import ShopsView from './ShopsView.vue'
 export default {
+  props: {
+    selectedShops: {
+      type: Array,
+      default: () => [],
+    },
+  },
   components: {
     LayoutMain,
     QuantityButtons,
+
   },
 
   data() {
@@ -87,8 +94,10 @@ export default {
   },
   computed: {
     selectedCategoryProducts() {
+
       if (!this.selectedCategory) return []
       return this.selectedCategory.categoryProducts || []
+      console.log('Selected Category Products:', this.selectedCategory.categoryProducts);
     },
   },
   methods: {
@@ -105,9 +114,9 @@ export default {
           const existingProduct = productMap.get(product.productComparisonCode)
           if (product.productPrice < existingProduct.lowestPrice) {
             existingProduct.lowestPrice = product.productPrice
-            existingProduct.productId = product.productId // Update to the latest product ID
-            existingProduct.productImageId = product.productImageId // Update image if necessary
-            existingProduct.productName = product.productName // Update name if necessary
+            existingProduct.productId = product.productId
+            existingProduct.productImageId = product.productImageId
+            existingProduct.productName = product.productName
           }
         }
       })
@@ -117,24 +126,28 @@ export default {
     getUniqueProducts(products) {
       const uniqueProducts = products.filter(
         (product, index, self) =>
-          index ===
-          self.findIndex((p) => p.productId === product.productId && !p.productComparisonCode),
+          index ===self.findIndex((p) => p.productId === product.productId && !p.productComparisonCode),
       )
       return uniqueProducts
     },
-    compareProducts(productA, productB) {
-      return productA.productComparisonCode === productB.productComparisonCode
-    },
+    // compareProducts(productA, productB) {
+    //   return productA.productComparisonCode === productB.productComparisonCode
+    // },
     mergeProducts() {
+
       const allCategories = []
       const allProducts = []
 
       this.shops.forEach((shop) => {
-        const categories = shop.data.shopCategory
-        categories.forEach((category) => {
-          allCategories.push(category)
-          allProducts.push(...category.categoryProducts)
-        })
+        console.log(this.selectedShops)
+        if (this.selectedShops.includes(shop.id)) {
+          const categories = shop.data.shopCategory
+          console.log('categories:', categories)
+          categories.forEach((category) => {
+            allCategories.push(category)
+            allProducts.push(...category.categoryProducts)
+          })
+        }
       })
 
       const uniqueCategories = allCategories.filter(
@@ -144,11 +157,11 @@ export default {
 
       const duplicateProducts = this.getDuplicateProductsWithLowestPrices(allProducts)
       const uniqueProducts = this.getUniqueProducts(allProducts)
-
       this.mergedProducts = {
         categories: uniqueCategories,
         products: [...duplicateProducts, ...uniqueProducts],
       }
+
     },
 
     receivedEmit(quantity) {
@@ -203,6 +216,14 @@ export default {
     const storedCart = JSON.parse(localStorage.getItem('cart')) || []
     this.cart = storedCart
   },
+  watch: {
+    selectedShops: {
+      immediate: true,
+      handler() {
+        this.mergeProducts()
+      }
+    }
+  }
 }
 </script>
 
