@@ -9,11 +9,10 @@
           @click="selectCategory(category)"
           class="category-item"
         >
-          <img
+          <ImagesCategory
             v-if="isCreateListPage"
-            :src="category.categoryImageId"
+            :id="category.categoryImageId"
             alt="Category"
-            class="category-image"
           />
           <span class="category-name">{{ category.categoryName }}</span>
         </li>
@@ -25,7 +24,7 @@
           class="product"
           @click="openPopup(product)"
         >
-          <img :src="product.productImageId" alt="Product" />
+          <ImagesProducts :id="product.productImageId" alt="Product" />
           <span class="name">{{ product.productName }}</span>
         </div>
       </div>
@@ -33,7 +32,7 @@
         <div class="popup-content">
           <span class="close" @click="closePopup()">&times;</span>
           <h3>{{ selectedProduct.productName }}</h3>
-          <img :src="selectedProduct.productImageId" alt="Product" />
+          <ImagesProducts :id="selectedProduct.productImageId" alt="Product" />
 
           <p>{{ selectedProduct.productDescription }}</p>
 
@@ -58,6 +57,9 @@ import SelgrosProduse from '../ShopsProducts/SelgrosProduse.json'
 import LayoutMain from '@/components/LayoutMain.vue'
 import QuantityButtons from '@/components/QuantityButtons.vue'
 import ShopsView from './ShopsView.vue'
+import ImagesCategory from '@/components/ImagesCategory.vue'
+import ImagesProducts from '@/components/ImagesProducts.vue'
+
 export default {
   props: {
     selectedShops: {
@@ -68,6 +70,8 @@ export default {
   components: {
     LayoutMain,
     QuantityButtons,
+    ImagesCategory,
+    ImagesProducts
   },
 
   data() {
@@ -116,37 +120,7 @@ export default {
     },
   },
   methods: {
-    // getDuplicateProductsWithLowestPrices(products) {
-    //   const productMap = new Map()
 
-    //   products.forEach((product) => {
-    //     if (product.productComparisonCode) {
-    //       if (!productMap.has(product.productComparisonCode)) {
-    //         productMap.set(product.productComparisonCode, {
-    //           ...product,
-    //           lowestPrice: product.productPrice,
-    //         })
-    //       } else {
-    //         const existingProduct = productMap.get(product.productComparisonCode)
-    //         if (product.productPrice < existingProduct.lowestPrice) {
-    //           // existingProduct.lowestPrice=productPrice
-    //           existingProduct.productId = product.productId
-    //           existingProduct.productName = product.productName
-    //           existingProduct.productImageId = product.productImageId
-    //         }
-    //       }
-    //     }
-    //   })
-    //   return Array.from(productMap.values())
-    // },
-    //getUniqueProducts(products) {
-    //   const uniqueProducts = products.filter(
-    //     (product, index, self) =>
-    //       index ===
-    //       self.findIndex((p) => p.productId === product.productId && !p.productComparisonCode),
-    //   )
-    //   return uniqueProducts
-    // },
     mergeProducts() {
       const selectedShops = JSON.parse(this.selectedShops) || []
       const allCategories = []
@@ -387,11 +361,7 @@ button:disabled {
   font-weight: bold;
   margin-bottom: 5px;
 }
-.category-image {
-  width: 100%;
-  height: auto;
-  display: block;
-}
+
 .cart-image {
   width: 50px;
   height: 50px;

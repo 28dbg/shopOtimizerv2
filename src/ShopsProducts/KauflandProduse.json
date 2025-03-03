@@ -3,7 +3,7 @@
     {
       "categoryName": "Fructe si legume",
       "categoryId": 1,
-      "categoryImageId": "67b39b18936ce8a6af2c3b46",
+      "categoryImageId": 11,
       "categoryProducts": [
         {
           "productName": "Grapefruit Rosu ",
@@ -49,7 +49,7 @@
     },
     {
       "categoryName": "Lactate",
-      "categoryImageId": "67b39b18b21277b57b069dc6",
+      "categoryImageId": 22,
       "categoryId": 2,
       "categoryProducts": [
         {
@@ -96,7 +96,7 @@
     },
     {
       "categoryName": "Macelarie si peste",
-      "categoryImageId": "67b39b18aa1ec542ed2cf1e7",
+      "categoryImageId": 33,
       "categoryId": 3,
       "categoryProducts": [
         {
@@ -144,7 +144,7 @@
     {
       "categoryName": "Snack-uri sarate",
       "categoryId": 4,
-      "categoryImageId": "67b39b1866e35b0e524cceb7",
+      "categoryImageId": 44,
       "categoryProducts": [
         
         {
@@ -192,7 +192,7 @@
     {
       "categoryName": "Dulciuri",
       "categoryId": 5,
-      "categoryImageId": "67b39b1858cbb30c82e87a88",
+      "categoryImageId": 55,
       "categoryProducts": [
         {
           "productName": "Snickers Bar White",

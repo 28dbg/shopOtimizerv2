@@ -3,7 +3,7 @@
     {
       "categoryId": 1,
       "categoryName": "Fructe si legume",
-      "categoryImageId": "67b39b8fef8fbbdfcca6d137",
+      "categoryImageId": 11,
       "categoryProducts": [
         {
           "productId": "67b39b8f18f8ec898f508aee",
@@ -22,7 +22,7 @@
           "productComparisonCode": 2549
         },
         {
-          "productId": "int(1,200)",
+          "productId": "67c6071ebca6ab3f9477c88f",
           "productName": "Castane",
           "productPrice": 30.51,
           "productImageId": "67b39b8f771fad431ae140b3",
@@ -50,7 +50,7 @@
     {
       "categoryId": 2,
       "categoryName": "Lactate",
-      "categoryImageId": "67b39b8f23d354a79017f4fb",
+      "categoryImageId": 22,
       "categoryProducts": [
         {
           "productId": "67b39b8f7c0a9fd0bc31b81e",
@@ -97,7 +97,7 @@
     {
       "categoryId": 3,
       "categoryName": "Macelarie si peste",
-      "categoryImageId": "67b39b8f4d80a7591f4e55c2",
+      "categoryImageId": 33,
       "categoryProducts": [
         {
           "productId": "67b39b8f9f2df0346120addb",
@@ -111,6 +111,7 @@
           "productId": "67b39b8f721f4685f4691dcb",
           "productName": "Pipote de pui",
           "productPrice": 31.02,
+          "productImageId": "67b39b8fad16207c29dcf8ce",
           "productDescription": "Pipote de pui Ograda Moldovana, 1 kg",
           "productComparisonCode": 4957 
         },
@@ -143,7 +144,7 @@
     {
       "categoryId": 4,
       "categoryName": "Snack-uri sarate",
-      "categoryImageId": "67b39b8fcfa4b6889afe113a",
+      "categoryImageId": 44,
       "categoryProducts": [
         {
           "productId": "67b39b8fde14628c803a84e0",
@@ -190,7 +191,7 @@
     {
       "categoryId": 5,
       "categoryName": "Dulciuri",
-      "categoryImageId": "67b39b8fb120d490e8725fdd",
+      "categoryImageId": 55,
       "categoryProducts": [
         {
           "productId": "67b39b8fed381eb62b4fe32a",

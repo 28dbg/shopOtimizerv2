@@ -3,7 +3,7 @@
     {
       "categoryName": "Fructe si legume",
       "categoryId": 1,
-      "categoryImageId": "67b3986a3934caf0211f5818",
+      "categoryImageId": 11,
       "categoryProducts": [
         {
           "productName": "Pere",
@@ -26,7 +26,7 @@
           "productName": "Limes",
           "productImageId": "67b3986a667702614284f810",
           "productComparisonCode": 80056 ,
-          "productId": "int(1,200)",
+          "productId": "67c6071e6c1957f95ded0452",
           "productPrice": 89.35,
           "productDescription": "Limes, +/- 1 kg"
         },
@@ -50,7 +50,7 @@
     },
     {
       "categoryName": "Lactate",
-      "categoryImageId": "67b3986a7d0825438c1cb2bd",
+      "categoryImageId": 22,
       "categoryId": 2,
       "categoryProducts": [
         
@@ -98,7 +98,7 @@
     },
     {
       "categoryName": "Macelarie si peste",
-      "categoryImageId": "67b3986a6586d5d1db5d34ff",
+      "categoryImageId": 33,
       "categoryId": 3,
       "categoryProducts": [
         
@@ -147,7 +147,7 @@
     {
       "categoryName": "Snack-uri sarate",
       "categoryId": 4,
-      "categoryImageId": "67b3986a677276ea646db783",
+      "categoryImageId": 44,
       "categoryProducts": [
         
         {
@@ -195,7 +195,7 @@
     {
       "categoryName": "Dulciuri",
       "categoryId": 5,
-      "categoryImageId": "67b3986aa5a4a99eeb60dfcf",
+      "categoryImageId": 55,
       "categoryProducts": [
         
         {
@@ -208,9 +208,9 @@
         },
         {
           "productName": "Batoane Casali Manner cu banane si ciocolata XL",
-          "productId": "67b3986ae1cbd55a036d7676",
+          "productId": "67c6071e923d1fa117e05098",
           "productComparisonCode": 8937 ,
-          "productImageId": "67b3986a0b1725af62ea4cc0",
+          "productImageId": "67c6071ea4a56f662d7a833f",
           "productPrice": 53.99,
           "productDescription": "Batoane Casali Manner cu banane si ciocolata XL, 22g"
         },

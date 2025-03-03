@@ -3,7 +3,7 @@
     {
       "categoryName": "Fructe si legume",
       "categoryId": 1,
-      "categoryImageId": "67b39b777bc773188bea5932",
+      "categoryImageId": 11,
       "categoryProducts": [
         
         {
@@ -26,7 +26,7 @@
           "productName": "Dovleac Eco",
           "productImageId": "67b39b774164e646986a5ad2",
           "productComparisonCode": 93946 ,
-          "productId": "int(1,200)",
+          "productId": "67c6071ec91fa87a6835d9a4",
           "productPrice": 63.19,
           "productDescription": "Dovleac Eco, bucata"
         },
@@ -50,7 +50,7 @@
     },
     {
       "categoryName": "Lactate",
-      "categoryImageId": "67b39b778b3ba52b8320f63c",
+      "categoryImageId": 22,
       "categoryId": 2,
       "categoryProducts": [
         {
@@ -97,7 +97,7 @@
     },
     {
       "categoryName": "Macelarie si peste",
-      "categoryImageId": "67b39b77d110b47e50fee317",
+      "categoryImageId": 33,
       "categoryId": 3,
       "categoryProducts": [
         {
@@ -112,6 +112,7 @@
           "productName": "Pipote de pui",
           "productId": "67b39b772cf97b3c5dfcf822",
           "productComparisonCode": 4957 ,
+          "productImageId": "67c623d774f818b583a31525",
           "productPrice": 75.89,
           "productDescription": "Pipote de pui Ograda Moldovana, 1 kg"
         },
@@ -144,7 +145,7 @@
     {
       "categoryName": "Snack-uri sarate",
       "categoryId": 4,
-      "categoryImageId": "67b39b77910066fd57ba79eb",
+      "categoryImageId": 44,
       "categoryProducts": [
         {
           "productName": "Chipsuri cu smantana si ceapa Pringles",
@@ -191,7 +192,7 @@
     {
       "categoryName": "Dulciuri",
       "categoryId": 5,
-      "categoryImageId": "67b39b77cbabeff2ced18db8",
+      "categoryImageId": 55,
       "categoryProducts": [
         {
           "productName": "Ciocolata cu lapte si alune intregi Lindt",
