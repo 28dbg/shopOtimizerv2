@@ -6,7 +6,7 @@
         <button class="select-all-button" @click="selectAllShops()">
           {{ allSelected ? 'Deselect All Shops' : 'Select All Shops' }}
         </button>
-        {{this.$store.state.test}}
+        <!-- {{this.$store.state.test}} -->
       </div>
       <div class="shops-container">
         <div class="shop" v-for="(items, index) in shops.shopsArray" :key="items">

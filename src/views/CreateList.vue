@@ -62,26 +62,25 @@ export default {
   props: {
     selectedShops: {
       type: Array,
-      default: () => [],
+      default: localStorage.getItem('selectedShops'),
     },
   },
   components: {
     LayoutMain,
     QuantityButtons,
-
   },
 
   data() {
     return {
       shops: [
-        { name: 'Kaufland', data: KauflandProduse },
-        { name: 'Lidl', data: LidlProduse },
-        { name: 'Penny', data: PennyProduse },
-        { name: 'Profi', data: ProfiProduse },
-        { name: 'Auchan', data: AuchanProduse },
-        { name: 'Selgros', data: SelgrosProduse },
-        { name: 'Carrefour', data: CarrefourProduse },
-        { name: 'Mega Image', data: MegaImageProduse },
+        { id: 1, name: 'Kaufland', data: KauflandProduse },
+        { id: 2, name: 'Lidl', data: LidlProduse },
+        { id: 3, name: 'Penny', data: PennyProduse },
+        { id: 7, name: 'Profi', data: ProfiProduse },
+        { id: 6, name: 'Auchan', data: AuchanProduse },
+        { id: 8, name: 'Selgros', data: SelgrosProduse },
+        { id: 4, name: 'Carrefour', data: CarrefourProduse },
+        { id: 5, name: 'Mega Image', data: MegaImageProduse },
       ],
       selectedCategory: [],
       cart: [],
@@ -94,75 +93,102 @@ export default {
   },
   computed: {
     selectedCategoryProducts() {
-
       if (!this.selectedCategory) return []
-      return this.selectedCategory.categoryProducts || []
-      console.log('Selected Category Products:', this.selectedCategory.categoryProducts);
-    },
-  },
-  methods: {
-    getDuplicateProductsWithLowestPrices(products) {
       const productMap = new Map()
-
-      products.forEach((product) => {
-        if (!productMap.has(product.productComparisonCode)) {
-          productMap.set(product.productComparisonCode, {
-            ...product,
-            lowestPrice: product.productPrice,
-          })
-        } else {
-          const existingProduct = productMap.get(product.productComparisonCode)
-          if (product.productPrice < existingProduct.lowestPrice) {
-            existingProduct.lowestPrice = product.productPrice
-            existingProduct.productId = product.productId
-            existingProduct.productImageId = product.productImageId
-            existingProduct.productName = product.productName
+      this.mergedProducts.products.forEach((product) => {
+        if (product.categoryId === this.selectedCategory.categoryId) {
+          if (product.productComparisonCode) {
+            if (!productMap.has(product.productComparisonCode)) {
+              productMap.set(product.productComparisonCode, product)
+            } else {
+              const existingProduct = productMap.get(product.productComparisonCode)
+              if (product.productPrice < existingProduct.productPrice) {
+                productMap.set(product.productComparisonCode, product)
+              }
+            }
+          } else {
+            productMap.set(product.productId, product)
           }
         }
       })
 
       return Array.from(productMap.values())
     },
-    getUniqueProducts(products) {
-      const uniqueProducts = products.filter(
-        (product, index, self) =>
-          index ===self.findIndex((p) => p.productId === product.productId && !p.productComparisonCode),
-      )
-      return uniqueProducts
-    },
-    // compareProducts(productA, productB) {
-    //   return productA.productComparisonCode === productB.productComparisonCode
+  },
+  methods: {
+    // getDuplicateProductsWithLowestPrices(products) {
+    //   const productMap = new Map()
+
+    //   products.forEach((product) => {
+    //     if (product.productComparisonCode) {
+    //       if (!productMap.has(product.productComparisonCode)) {
+    //         productMap.set(product.productComparisonCode, {
+    //           ...product,
+    //           lowestPrice: product.productPrice,
+    //         })
+    //       } else {
+    //         const existingProduct = productMap.get(product.productComparisonCode)
+    //         if (product.productPrice < existingProduct.lowestPrice) {
+    //           // existingProduct.lowestPrice=productPrice
+    //           existingProduct.productId = product.productId
+    //           existingProduct.productName = product.productName
+    //           existingProduct.productImageId = product.productImageId
+    //         }
+    //       }
+    //     }
+    //   })
+    //   return Array.from(productMap.values())
+    // },
+    //getUniqueProducts(products) {
+    //   const uniqueProducts = products.filter(
+    //     (product, index, self) =>
+    //       index ===
+    //       self.findIndex((p) => p.productId === product.productId && !p.productComparisonCode),
+    //   )
+    //   return uniqueProducts
     // },
     mergeProducts() {
-
+      const selectedShops = JSON.parse(this.selectedShops) || []
       const allCategories = []
       const allProducts = []
 
       this.shops.forEach((shop) => {
-        console.log(this.selectedShops)
-        if (this.selectedShops.includes(shop.id)) {
+        if (selectedShops.includes(shop.id)) {
           const categories = shop.data.shopCategory
-          console.log('categories:', categories)
           categories.forEach((category) => {
-            allCategories.push(category)
-            allProducts.push(...category.categoryProducts)
+            if (!allCategories.some((c) => c.categoryId === category.categoryId)) {
+              allCategories.push(category)
+            }
+            category.categoryProducts.forEach((product) => {
+              allProducts.push({ ...product, categoryId: category.categoryId })
+            })
           })
         }
       })
 
-      const uniqueCategories = allCategories.filter(
-        (category, index, self) =>
-          index === self.findIndex((c) => c.categoryId === category.categoryId),
-      )
+      const productMap = new Map()
 
-      const duplicateProducts = this.getDuplicateProductsWithLowestPrices(allProducts)
-      const uniqueProducts = this.getUniqueProducts(allProducts)
+      allProducts.forEach((product) => {
+        if (product.productComparisonCode) {
+          if (!productMap.has(product.productComparisonCode)) {
+            productMap.set(product.productComparisonCode, product)
+          } else {
+            const existingProduct = productMap.get(product.productComparisonCode)
+            if (product.productPrice < existingProduct.productPrice) {
+              productMap.set(product.productComparisonCode, product)
+            }
+          }
+        } else {
+          productMap.set(product.productId, product)
+        }
+      })
+
       this.mergedProducts = {
-        categories: uniqueCategories,
-        products: [...duplicateProducts, ...uniqueProducts],
+        categories: allCategories,
+        products: Array.from(productMap.values()),
       }
-
     },
+
 
     receivedEmit(quantity) {
       // Update quantity
@@ -221,9 +247,9 @@ export default {
       immediate: true,
       handler() {
         this.mergeProducts()
-      }
-    }
-  }
+      },
+    },
+  },
 }
 </script>
 
